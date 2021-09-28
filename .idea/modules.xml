@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnnotationStudy/AnnotationStudy.iml" filepath="$PROJECT_DIR$/AnnotationStudy/AnnotationStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BasicIO/BasicIO.iml" filepath="$PROJECT_DIR$/BasicIO/BasicIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CollectionStudy/CollectionStudy.iml" filepath="$PROJECT_DIR$/CollectionStudy/CollectionStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EnumStudy/EnumStudy.iml" filepath="$PROJECT_DIR$/EnumStudy/EnumStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExceptionHandle/ExceptionHandle.iml" filepath="$PROJECT_DIR$/ExceptionHandle/ExceptionHandle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericStudy/GenericStudy.iml" filepath="$PROJECT_DIR$/GenericStudy/GenericStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUCStudy/JUCStudy.iml" filepath="$PROJECT_DIR$/JUCStudy/JUCStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetStudy/NetStudy.iml" filepath="$PROJECT_DIR$/NetStudy/NetStudy.iml" />
+    </modules>
+  </component>
+</project>
