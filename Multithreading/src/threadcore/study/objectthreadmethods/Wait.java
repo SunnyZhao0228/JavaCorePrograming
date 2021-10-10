@@ -5,19 +5,40 @@ package threadcore.study.objectthreadmethods;
  * @version : [v1.0]
  * @createTime : [2021-09-27 22:15]
  */
-public class Wait implements Runnable{
+public class Wait {
     public static Object object = new Object();
 
-    @Override
-    public void run() {
-        synchronized (object) {
-            System.out.println(Thread.currentThread().getName() + "开始执行了...");
-
-            try{
-                object.wait();
-            }catch (InterruptedException e) {
-                e.printStackTrace();
+    static class Thread1 extends Thread {
+        @Override
+        public void run() {
+            synchronized(object) {
+                System.out.println(Thread.currentThread().getName() + "开始执行");
+                try {
+                    object.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(Thread.currentThread().getName() + "获取到了锁");
             }
         }
+    }
+
+    static class Thread2 extends Thread {
+        @Override
+        public void run() {
+            synchronized(object) {
+                object.notify();
+                System.out.println(Thread.currentThread().getName() + "调用了notify");
+            }
+        }
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        Thread1 thread1 = new Thread1();
+        Thread2 thread2 = new Thread2();
+
+        thread1.start();
+        Thread.sleep(100);
+        thread2.start();
     }
 }
