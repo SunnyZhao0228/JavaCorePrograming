@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/ExceptionHandle/ExceptionHandle.iml" filepath="$PROJECT_DIR$/ExceptionHandle/ExceptionHandle.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenericStudy/GenericStudy.iml" filepath="$PROJECT_DIR$/GenericStudy/GenericStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUCStudy/JUCStudy.iml" filepath="$PROJECT_DIR$/JUCStudy/JUCStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LambdaStream/LambdaStream.iml" filepath="$PROJECT_DIR$/LambdaStream/LambdaStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetStudy/NetStudy.iml" filepath="$PROJECT_DIR$/NetStudy/NetStudy.iml" />
     </modules>
