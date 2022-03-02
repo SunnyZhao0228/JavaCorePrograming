@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/LambdaStream/LambdaStream.iml" filepath="$PROJECT_DIR$/LambdaStream/LambdaStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetStudy/NetStudy.iml" filepath="$PROJECT_DIR$/NetStudy/NetStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflection/reflection.iml" filepath="$PROJECT_DIR$/reflection/reflection.iml" />
     </modules>
   </component>
 </project>
