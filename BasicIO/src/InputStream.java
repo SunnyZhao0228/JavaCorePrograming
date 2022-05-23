@@ -12,27 +12,14 @@ import java.util.zip.ZipInputStream;
  */
 public class InputStream {
     public static void main(String[] args) throws IOException {
-
-
-
         String s="ABCDE";
-
-
 
         byte b[]=s.getBytes();
 
-
-
         FileOutputStream file=new FileOutputStream("test.txt",true);
-
-
 
         file.write(b);
 
-
-
         file.close();
-
-
     }
 }
