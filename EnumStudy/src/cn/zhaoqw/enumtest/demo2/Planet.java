@@ -1,4 +1,4 @@
-package cn.zhaoqw.enumtest.demo2;//Oracle�����̳�
+package cn.zhaoqw.enumtest.demo2;
 
 public enum Planet {
     MERCURY (3.303e+23, 2.4397e6),
@@ -10,9 +10,9 @@ public enum Planet {
     URANUS  (8.686e+25, 2.5559e7),
     NEPTUNE (1.024e+26, 2.4746e7);
 
-    private final double mass;   // in kilograms    
+    private final double mass;   // in kilograms
     private final double radius; // in meters
-    
+
     Planet(double mass, double radius) {
         this.mass = mass;
         this.radius = radius;
