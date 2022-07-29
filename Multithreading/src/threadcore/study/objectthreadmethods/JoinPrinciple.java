@@ -1,7 +1,7 @@
 package threadcore.study.objectthreadmethods;
 
 /**
- * 描述：     通过讲解join原理，分析出join的代替写法
+ * 描述：    join的代替写法
  */
 public class JoinPrinciple {
 
