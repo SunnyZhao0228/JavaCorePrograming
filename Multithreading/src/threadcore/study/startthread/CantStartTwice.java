@@ -18,6 +18,8 @@ public class CantStartTwice {
         Thread thread = new Thread();
 
         thread.start();
+        // 只能Start一次，start之后这个thread状态会改变，
+        // 再次调用start时会判断状态是否为new，不是直接报java.lang.IllegalThreadStateException
         thread.start();
     }
 }

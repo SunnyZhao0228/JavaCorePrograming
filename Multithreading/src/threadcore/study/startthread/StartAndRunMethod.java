@@ -9,6 +9,7 @@ public class StartAndRunMethod {
                 System.out.println(Thread.currentThread().getName());
         };
 
+        // 调用Run等于调用一般方法
         runnable.run();
 
         Thread thread = new Thread(runnable);

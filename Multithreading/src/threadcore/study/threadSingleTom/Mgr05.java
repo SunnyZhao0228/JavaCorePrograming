@@ -38,8 +38,5 @@ public class Mgr05 {
                  }
              }).start();
         }
-
-
-
     }
 }

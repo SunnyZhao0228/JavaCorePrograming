@@ -7,12 +7,14 @@ package threadcore.study.createthread;
  */
 public class BothRunnableThread {
     public static void main(String[] args) {
+
         new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("runnable");
             }
-        }){
+        }) {
+            // 重写run方法所以打印thread
             @Override
             public void run() {
                 System.out.println("thread");
