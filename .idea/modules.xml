@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnnotationStudy/AnnotationStudy.iml" filepath="$PROJECT_DIR$/AnnotationStudy/AnnotationStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsyncIO/AsyncIO.iml" filepath="$PROJECT_DIR$/AsyncIO/AsyncIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/BasicIO/BasicIO.iml" filepath="$PROJECT_DIR$/BasicIO/BasicIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/CollectionStudy/CollectionStudy.iml" filepath="$PROJECT_DIR$/CollectionStudy/CollectionStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/EnumStudy/EnumStudy.iml" filepath="$PROJECT_DIR$/EnumStudy/EnumStudy.iml" />
@@ -12,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/LambdaStream/LambdaStream.iml" filepath="$PROJECT_DIR$/LambdaStream/LambdaStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetStudy/NetStudy.iml" filepath="$PROJECT_DIR$/NetStudy/NetStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NoneBlockingIO/NoneBlockingIO.iml" filepath="$PROJECT_DIR$/NoneBlockingIO/NoneBlockingIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/UsefulApi/UsefulApi.iml" filepath="$PROJECT_DIR$/UsefulApi/UsefulApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflection/reflection.iml" filepath="$PROJECT_DIR$/reflection/reflection.iml" />
     </modules>

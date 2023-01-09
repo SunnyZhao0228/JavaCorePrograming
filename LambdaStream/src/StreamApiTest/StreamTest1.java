@@ -1,7 +1,11 @@
 package StreamApiTest;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ForkJoinTask;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -13,9 +17,9 @@ import java.util.stream.Stream;
  */
 public class StreamTest1 {
     public static void main(String[] args) {
-        Stream<Integer> integerStream = Stream.of(1, 2, 3, 4, 5, 6)
-                .map((item) -> item + 1);
-        integerStream.forEach(System.out::println);
+        Integer reduce = Stream.of(1, 2, 3, 4, 5, 6)
+                .map((item) -> item + 1).reduce(0, Math::max);
+        System.out.println(reduce);
 
 
         Random random = new Random();
@@ -30,6 +34,19 @@ public class StreamTest1 {
 
         start = System.currentTimeMillis();
         System.out.println(collect.parallelStream().max((x,y) -> x.compareTo(y)));
+        end = System.currentTimeMillis();
+        System.out.println(end - start);
+
+        start = System.currentTimeMillis();
+        ForkJoinPool forkJoinPool = new ForkJoinPool(2);
+        ForkJoinTask<Optional<Integer>> submit = forkJoinPool.submit(() -> collect.parallelStream().max((x, y) -> x.compareTo(y)));
+        try {
+            System.out.println(submit.get().get());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        }
         end = System.currentTimeMillis();
         System.out.println(end - start);
 
