@@ -12,6 +12,7 @@ import java.util.concurrent.FutureTask;
 public class CallableStyle implements Callable<String> {
     @Override
     public String call() throws Exception {
+        System.out.println("实现了Call方法");
         return "hello";
     }
 

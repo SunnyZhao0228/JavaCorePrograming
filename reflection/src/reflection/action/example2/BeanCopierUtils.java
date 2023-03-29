@@ -18,11 +18,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import net.sf.cglib.beans.BeanCopier;
 import net.sf.cglib.core.Converter;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
+
 
 public class BeanCopierUtils {
-  private static final Logger LOGGER = null;
+//  private static final Logger LOGGER = null;
 
   private static final Map<String, BeanCopier> BEAN_COPIER_MAP = new ConcurrentHashMap();
 
@@ -133,7 +132,7 @@ public class BeanCopierUtils {
               return targetClassDeclaredField.get(target);
             }
           } catch (Exception var10) {
-            LOGGER.error("源对象属性:[{}]，拷贝失败", (Throwable) sourceValue);
+            System.out.printf("源对象属性:[{}]，拷贝失败%n", (Throwable) sourceValue);
           }
         }
 
