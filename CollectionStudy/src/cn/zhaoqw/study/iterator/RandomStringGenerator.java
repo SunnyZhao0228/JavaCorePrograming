@@ -6,6 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * Iterable<T> 实现Iterable接口，实现iterator方法
+ *
+ *
  * @author zhaoqw
  * @date 2023/01/01
  */

@@ -1,5 +1,6 @@
 package exercise01;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class Test {
@@ -14,7 +15,8 @@ public class Test {
 			
 			
 			System.out.println("-----------------------------------按照人口从少到多的顺序输出所有亚洲国家列表-----------------------------------");	
-			
+			list.stream().filter(country -> "亚洲".equals(country.getContinent()))
+					.sorted(Comparator.comparingInt(Country::getPopulation)).forEach(System.out::println);
 			
 			
 			System.out.println("-----------------------------------统计南美洲国家数量-----------------------------------");	
