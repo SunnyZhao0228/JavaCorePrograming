@@ -7,6 +7,10 @@
     <groupId>org.example</groupId>
     <artifactId>JavaCorePrograming</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>SecurityAndEncryption</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
