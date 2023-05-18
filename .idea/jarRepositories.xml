@@ -36,5 +36,10 @@
       <option name="name" value="Central Repository" />
       <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-ali" />
+      <option name="name" value="maven-ali" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/grou ps/public//" />
+    </remote-repository>
   </component>
 </project>
