@@ -15,7 +15,6 @@
       <module fileurl="file://$PROJECT_DIR$/NetStudy/NetStudy.iml" filepath="$PROJECT_DIR$/NetStudy/NetStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/NoneBlockingIO/NoneBlockingIO.iml" filepath="$PROJECT_DIR$/NoneBlockingIO/NoneBlockingIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectOriented/ObjectOriented.iml" filepath="$PROJECT_DIR$/ObjectOriented/ObjectOriented.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SecurityAndEncryption.iml" filepath="$PROJECT_DIR$/SecurityAndEncryption.iml" />
       <module fileurl="file://$PROJECT_DIR$/UsefulApi/UsefulApi.iml" filepath="$PROJECT_DIR$/UsefulApi/UsefulApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflection/reflection.iml" filepath="$PROJECT_DIR$/reflection/reflection.iml" />
     </modules>

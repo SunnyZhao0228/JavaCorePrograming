@@ -25,8 +25,5 @@ public class GetHoldCount {
         lock.unlock();
         System.out.println(lock.getHoldCount());
 
-
-
-
     }
 }
