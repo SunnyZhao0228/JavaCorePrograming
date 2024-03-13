@@ -34,10 +34,10 @@ public class CyclicBarrierSample {
     }
 
     public static void go() {
-        System.out.println(Thread.currentThread().getName() + ": 准备就绪");
+        System.out.println(Thread.currentThread().getName() + ": ready");
         try {
             cyclicBarrier.await(); // 设置屏障点。当累计5个线程都准备好后，才运行后面的代码
-            System.out.println(Thread.currentThread().getName() + ": 开始运行");
+            System.out.println(Thread.currentThread().getName() + ": start run");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } catch (BrokenBarrierException e) {

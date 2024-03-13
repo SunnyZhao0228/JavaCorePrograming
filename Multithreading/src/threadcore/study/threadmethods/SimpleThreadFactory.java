@@ -15,14 +15,21 @@ public class SimpleThreadFactory implements ThreadFactory {
     private final String threadGroupName;
     private final String threadNamePrefix;
 
-    private final AtomicInteger count = new AtomicInteger(0);
+    private final AtomicInteger poolCount = new AtomicInteger(0);
     private final AtomicInteger threadSeq = new AtomicInteger(0);
 
     private final ThreadGroup threadGroup;
 
     @Override
     public Thread newThread(Runnable r) {
-        return null;
+        Thread t = new Thread(threadGroup, r,
+                threadNamePrefix + threadSeq.getAndIncrement(),
+                0);
+        if (t.isDaemon())
+            t.setDaemon(false);
+        if (t.getPriority() != Thread.NORM_PRIORITY)
+            t.setPriority(Thread.NORM_PRIORITY);
+        return t;
     }
 
     public SimpleThreadFactory(int maxThread, String threadGroupName, String threadNamePrefix) {
