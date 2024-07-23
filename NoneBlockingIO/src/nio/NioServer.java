@@ -20,7 +20,7 @@ public class NioServer {
         Selector selector = null;
         ServerSocketChannel serverSocketChannel = null;
 
-        try{
+        try {
             selector = Selector.open();
             serverSocketChannel = ServerSocketChannel.open();
             // 配置成非阻塞
@@ -42,7 +42,7 @@ public class NioServer {
                 while (iterator.hasNext()) {
                     key = iterator.next();
                     iterator.remove();
-                    try{
+                    try {
                         handelInput(selector, key);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -88,6 +88,7 @@ public class NioServer {
             }
         }
     }
+
     public static void doWrite(SocketChannel channel, String response) throws IOException {
         if (response != null && response.trim().length() > 0) {
             byte[] bytes = response.getBytes();

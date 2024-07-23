@@ -19,12 +19,16 @@ public class Test {
 					.sorted(Comparator.comparingInt(Country::getPopulation)).forEach(System.out::println);
 			
 			
-			System.out.println("-----------------------------------统计南美洲国家数量-----------------------------------");	
-			
-			
-			
+			System.out.println("-----------------------------------统计南美洲国家数量-----------------------------------");
+			long count = list.stream().filter(country -> "南美洲".equals(country.getContinent()))
+					.count();
+			System.out.println("南美洲国家数量:" + count);
+
+
 			System.out.println("-----------------------------------输出所有欧洲国家的名称及其首都（首府）名称-----------------------------------");	
-			
+			list.stream().filter(country -> "欧洲".equals(country.getContinent())).forEach(country -> {
+				System.out.println("Capacity: " + country.getCapital() + ", Name: " + country.getName());
+			});
 			
 			System.out.println("-----------------------------------输出所有大洋洲法属国家列表-----------------------------------");	
 			
