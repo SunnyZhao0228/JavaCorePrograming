@@ -55,6 +55,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
+out/**/*.class
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -160,3 +161,4 @@ buildNumber.properties
 .classpath
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,maven
+/SecurityAndEncryption.iml

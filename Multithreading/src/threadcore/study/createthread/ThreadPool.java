@@ -12,6 +12,8 @@ import java.util.concurrent.Executors;
  * @createTime : [2021-09-11 8:36]
  */
 public class ThreadPool {
+    public static final int MAX_TURN = 5;
+    public static final int COMPUTE_TIMES = 100000000;
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newCachedThreadPool();
 

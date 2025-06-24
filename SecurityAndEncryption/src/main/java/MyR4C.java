@@ -18,7 +18,7 @@ public class MyR4C {
         j = 0;
 
         for (int i = 0; i < 255; i++) {
-            j = iS[i] + iK[i] % 256;
+            j = ( j + iS[i] + iK[i]) % 256;
             int temp  = iS[i];
             iS[i] = iS[j];
             iS[j] = temp;
