@@ -2,6 +2,7 @@ package threadcore.study.createthread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * 线程池创建线程的方法
@@ -13,11 +14,11 @@ import java.util.concurrent.Executors;
  */
 public class ThreadPool {
     public static final int MAX_TURN = 5;
-    public static final int COMPUTE_TIMES = 100000000;
+    public static final int COMPUTE_TIMES = 10000000;
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newCachedThreadPool();
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < MAX_TURN; i++) {
             executorService.submit(new Task());
         }
     }
@@ -25,15 +26,14 @@ public class ThreadPool {
 
 
 class Task implements Runnable{
+    private static AtomicLong atomicLong = new AtomicLong(0l);
 
     @Override
     public void run() {
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        for (int i = 0; i < ThreadPool.COMPUTE_TIMES; i++) {
+            atomicLong.incrementAndGet();
         }
-        System.out.println(Thread.currentThread().getName());
+        System.out.println(Thread.currentThread().getName() + atomicLong.get());
     }
 }
 

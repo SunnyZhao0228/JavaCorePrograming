@@ -18,4 +18,11 @@ public class WelcomeApp {
             System.out.println("2.Welcome ！ I‘m " + Thread.currentThread().getName());
         }
     }
+
+    static class WelcomeRunnable implements Runnable {
+        @Override
+        public void run() {
+            System.out.println("3.Welcome ！ I‘m " + Thread.currentThread().getName());
+        }
+    }
 }

@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
  * @date 2023/5/19
  */
 public class WordCount {
-    private static int[] arr = new int[10000];
+    private static int[] arr = new int[100000];
 
     static {
         Random random = new Random();
