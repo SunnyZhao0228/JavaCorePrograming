@@ -19,28 +19,30 @@ public class DeadLockTest {
         // 这里用的synchronized，用Reentrantlock也是一样的
         Thread threadA = new Thread(() -> {
            synchronized (resourceA) {
-               System.out.println(Thread.currentThread().getName() + "get ResourceA");
+               System.out.printf("Thread[ ID : %d] holds ResourceA\n", Thread.currentThread().getId());
+               System.out.println(Thread.currentThread().getName() + " get ResourceA");
                try {
                    Thread.sleep(200);
                } catch (InterruptedException e) {
                    e.printStackTrace();
                }
-               System.out.println(Thread.currentThread().getName() + "waiting ResourceB");
+               System.out.println(Thread.currentThread().getName() + " waiting ResourceB");
                synchronized (resourceB) {
-                   System.out.println(Thread.currentThread().getName() + "get ResourceB");
+                   System.out.printf("Thread[ ID : %d] holds ResourceB\n", Thread.currentThread().getId());
+                   System.out.println(Thread.currentThread().getName() + " get ResourceB");
                }
            }
         });
 
         Thread threadB = new Thread(() -> {
             synchronized (resourceB) {
-                System.out.println(Thread.currentThread().getName() + "get ResourceB");
+                System.out.println(Thread.currentThread().getName() + " get ResourceB");
                 try {
                     Thread.sleep(200);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "waiting ResourceA");
+                System.out.println(Thread.currentThread().getName() + " waiting ResourceA");
                 synchronized (resourceA) {
                     System.out.println(Thread.currentThread().getName() + "get ResourceA");
                 }

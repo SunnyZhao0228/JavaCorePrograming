@@ -1,6 +1,9 @@
 
 package reflection.action.example2;
 
+import net.sf.cglib.beans.BeanCopier;
+import net.sf.cglib.core.Converter;
+
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -15,8 +18,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import net.sf.cglib.beans.BeanCopier;
-import net.sf.cglib.core.Converter;
 
 
 
