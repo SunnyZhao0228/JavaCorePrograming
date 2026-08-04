@@ -11,12 +11,14 @@ public class MyR4C {
         }
         int j = 1;
 
+        // 初始化密钥数组
         for(short i = 0; i < 256; i++) {
             iK[i] = (byte) aKey.charAt(i % aKey.length());
         }
 
         j = 0;
 
+        // 打乱密钥数组
         for (int i = 0; i < 255; i++) {
             j = ( j + iS[i] + iK[i]) % 256;
             int temp  = iS[i];

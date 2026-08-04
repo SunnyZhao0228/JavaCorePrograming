@@ -47,7 +47,7 @@ public class ProducerConsumerProblemDemo {
                             wait();
                         }
                         int value = random.nextInt(100);
-                        System.out.printf("线程[%s] 正在生产数据 : %d\n", Thread.currentThread().getName(), value);
+                        System.out.printf("线程[%s] 正在[生产]数据 : %d\n", Thread.currentThread().getName(), value);
                         data.add(value);
 
                         // 唤起消费线程
